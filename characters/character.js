@@ -11,6 +11,7 @@ class Character {
         this.mana = mana;
         this.spells = [];
         this.weapons = [];
+        this.pets = [];
         this.activePet = null;
     }
 

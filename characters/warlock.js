@@ -4,7 +4,6 @@ const Character = require("./character");
 class Warlock extends Character {
     constructor(name) {
         super(name, "warlock", 3, 3, 7, 5, 200, 100);
-        this.pets = [];
         // every warlock starts with an imp as its first pet!
         const imp = new Pet("imp", 3);
         this.pets.push(imp);
