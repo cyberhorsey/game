@@ -55,6 +55,21 @@ class Character {
             }
         }
     }
+
+    // add weapon adds a weapon to the user's array of weapons.
+    addWeapon(weapon) {
+        this.weapons.push(weapon);
+    }
+
+    // equip weapon equips a specific weapon from the users array of weapons.
+    equipWeapon(weaponName) {
+        for(let i=0; i <this.weapons.length;i++) {
+            const weapon = this.weapons[i];
+            if(weapon.name === weaponName) {
+                this.equippedWeapon = weapon;
+            }
+        }
+    }
 }
 
 module.exports = Character;
